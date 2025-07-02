@@ -1,0 +1,70 @@
+.skill-mobile-container {
+  width: 100%;
+  background: #c4a580;
+  padding: 32px 0 24px 0;
+  display: block;
+}
+
+.skill-mobile-title {
+  text-align: center;
+  font-family: "Akira", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 18px;
+  color: #222;
+}
+
+.skill-mobile-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px 8px;
+  justify-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.skill-mobile-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.08);
+  border: 1.5px solid #444;
+  padding: 10px 0 6px 0;
+  width: 80px;
+  transition: box-shadow 0.2s;
+}
+.skill-mobile-item:hover {
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.13);
+}
+.skill-mobile-icon {
+  margin-bottom: 6px;
+}
+.skill-mobile-name {
+  font-size: 0.95rem;
+  color: #222;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .skill-mobile-title {
+    font-size: 1.3rem;
+  }
+  .skill-mobile-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px 6px;
+    max-width: 98vw;
+  }
+  .skill-mobile-item {
+    width: 90%;
+    min-width: 90px;
+    padding: 8px 0 4px 0;
+  }
+}
+
+/* Sembunyikan di desktop */
+@media (min-width: 1024px) {
+  .skill-mobile-container {
+    display: none !important;
+  }
+}
