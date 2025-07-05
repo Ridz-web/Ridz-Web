@@ -1,6 +1,6 @@
 // File: Project.jsx
 import React, { useRef } from "react";
-import "./Project.css";
+import "./project.css";
 import Kampung from "../../assets/ProjectImages/e-kampung.png";
 import blog from "../../assets/ProjectImages/holidayFamily1.jpg";
 import Placeholder from "../../assets/ProjectImages/placeholder.png";

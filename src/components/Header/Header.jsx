@@ -55,14 +55,14 @@ const FirstText = () => {
   return (
     <>
       <motion.h1
-        style={{ x: right }}
+        style={{ x: right, fontFamily: "Akira" }}
         className='font-Akira lg:text-[8rem] text-[70px] font-extrabold absolute text-nowrap italic z-1'
         initial={{ x: -2000 }}
         animate={{ x: 0, transition: { duration: 1, delay: 2.5 } }}>
         FRONTEND DEVELOPER
       </motion.h1>
       <motion.h1
-        style={{ x: right }}
+        style={{ x: right ,  fontFamily: "Akira" }}
         className='font-Akira lg:text-[8rem] text-[70px] font-extrabold absolute text-nowrap italic z-5 textOutLine'
         initial={{ x: -2000 }}
         animate={{ x: 0, transition: { duration: 1, delay: 2.5 } }}>
@@ -78,14 +78,14 @@ const SecondText = () => {
   return (
     <>
       <motion.h1
-        style={{ x: left }}
+        style={{ x: left,  fontFamily: "Akira" }}
         className='font-Akira secondText lg:text-[8rem] text-[70px] font-extrabold absolute text-nowrap italic z-1'
         initial={{ x: 2000 }}
         animate={{ x: 0, transition: { duration: 1, delay: 2.5 } }}>
         CODING WITH ME
       </motion.h1>
       <motion.h1
-        style={{ x: left }}
+        style={{ x: left,  fontFamily: "Akira" }}
         className='font-Akira secondText lg:text-[8rem] text-[70px] font-extrabold absolute text-nowrap italic z-5 textOutLine'
         initial={{ x: 2000 }}
         animate={{ x: 0, transition: { duration: 1, delay: 2.5 } }}>

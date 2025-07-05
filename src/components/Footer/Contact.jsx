@@ -190,11 +190,12 @@ const Contact = () => {
               <img
                 width='220px'
                 height='200px'
-                className='rounded-md grayscale hover:grayscale-0 transition-all duration-500 lg:-mt-8 mt-28 shadow-xl'
+                className='rounded-md grayscale contacimg hover:grayscale-0 transition-all duration-500 lg:-mt-8 mt-28 shadow-xl'
                 src={Logo}
                 alt=''
                 style={{
                   transition: "transform 0.3s",
+                  
                 }}
               />
             </motion.div>

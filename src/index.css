@@ -57,7 +57,7 @@ body {
 }
 .secondText {
   position: absolute;
-  top: 320px;
+  top: 380px;
 }
 .loaderSection {
   width: 100%;
@@ -428,7 +428,7 @@ nav {
   position: absolute;
   display: flex;
   flex-direction: column;
-  right: -76rem;
+  right: -92rem;
   top: 1.5rem;
   line-height: 1rem;
 }
@@ -449,7 +449,11 @@ nav {
 }
 @media (max-width: 768px) {
   .contactContainer {
+    text-align: center;
     margin-inline: 100px;
+  }
+  .contacimg{
+    margin-left: 0px;
   }
   .IdentityRight {
     position: absolute;
@@ -479,6 +483,14 @@ nav {
     margin-left: 100px;
   }
 }
+
+.contacimg {
+  margin-left: 300px;
+}
+
+.contactContainer {
+    margin-left: 200px;
+  }
 
 .about-background {
   position: absolute;
