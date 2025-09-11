@@ -11,8 +11,9 @@ const Loader = () => {
         transition: { delay: 2, duration: 1 },
         transitionEnd: { display: "none" },
       }}
-      className='loaderSection z-50 bg-[#c2a680]'>
-      <div className='loaderContainer text-black'>
+      className="loaderSection z-50 bg-[#c2a680]"
+    >
+      <div className="loaderContainer text-black">
         <motion.span
           initial={{ opacity: 0 }}
           animate={{
@@ -20,7 +21,8 @@ const Loader = () => {
             transition: { delay: 0.5 },
             transitionEnd: { display: "none" },
           }}
-          className='loaderText'>
+          className="loaderText"
+        >
           Selamat Datang
         </motion.span>
         <motion.span
@@ -30,7 +32,8 @@ const Loader = () => {
             transition: { delay: 0.8 },
             transitionEnd: { display: "none" },
           }}
-          className='loaderText'>
+          className="loaderText"
+        >
           Welcome
         </motion.span>
         <motion.span
@@ -40,7 +43,8 @@ const Loader = () => {
             transition: { delay: 1.1 },
             transitionEnd: { display: "none" },
           }}
-          className='loaderText'>
+          className="loaderText"
+        >
           جی آیاں نوں کہنا
         </motion.span>
         <motion.span
@@ -50,7 +54,8 @@ const Loader = () => {
             transition: { delay: 1.4 },
             transitionEnd: { display: "none" },
           }}
-          className='loaderText'>
+          className="loaderText"
+        >
           ДОБРО ПОЖАЛОВАТЬ
         </motion.span>
         <motion.span
@@ -60,7 +65,8 @@ const Loader = () => {
             transition: { delay: 1.7 },
             transitionEnd: { display: "none" },
           }}
-          className='loaderText'>
+          className="loaderText"
+        >
           いらっしゃいませ
         </motion.span>
       </div>

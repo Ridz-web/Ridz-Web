@@ -97,47 +97,53 @@ const Contact = () => {
 
   return (
     <>
-      <div id='contact' className='relative' ref={contactRef}>
-        <div className='flex contactContainer flex-col max-w-2xl m-auto p-6 justify-center lg:text-left text-center text-black h-[100dvh]'>
+      <div id="contact" className="relative" ref={contactRef}>
+        <div className="flex contactContainer flex-col max-w-2xl m-auto p-6 justify-center lg:text-left text-center text-black h-[100dvh]">
           {/* Title Section */}
           <motion.div
-            initial='hidden'
+            initial="hidden"
             animate={isInView ? "visible" : "hidden"}
-            variants={containerVariants}>
+            variants={containerVariants}
+          >
             <motion.div
               style={{ fontFamily: "Akira" }}
-              className='font-bold text-4xl text-black mb-4'
-              variants={childVariants}>
+              className="font-bold text-4xl text-black mb-4"
+              variants={childVariants}
+            >
               Stay In Touch
             </motion.div>
 
             <motion.div
               style={{ marginTop: "15px" }}
-              className='h-2 w-16 bg-black mb-2'
-              variants={lineVariants}></motion.div>
+              className="h-2 w-16 bg-black mb-2"
+              variants={lineVariants}
+            ></motion.div>
 
             <motion.div
               style={{ marginTop: "10px", marginLeft: "30px" }}
-              className='h-2 w-16 bg-black mb-2'
-              variants={lineVariants}></motion.div>
+              className="h-2 w-16 bg-black mb-2"
+              variants={lineVariants}
+            ></motion.div>
           </motion.div>
 
           {/* Contact Information */}
           <motion.div
-            initial='hidden'
+            initial="hidden"
             animate={isInView ? "visible" : "hidden"}
             variants={containerVariants}
             style={{ marginTop: "20px" }}
-            className='flex flex-col text-[#5B4634] mb-6 text-lg font-serif'>
+            className="flex flex-col text-[#5B4634] mb-6 text-lg font-serif"
+          >
             <motion.p variants={childVariants}>
               Address: JL.Jangli Gabeng, Semarang. Indonesia
             </motion.p>
             <motion.a
-              className='flex items-center gap-2'
-              target='_blank'
-              rel='noopener noreferrer'
-              href='https://wa.me/6285770715562'
-              variants={childVariants}>
+              className="flex items-center gap-2"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://wa.me/6285770715562"
+              variants={childVariants}
+            >
               Whatsapp : +6285770715562 <FaArrowRight />
             </motion.a>
             <motion.p variants={childVariants}>
@@ -150,7 +156,7 @@ const Contact = () => {
 
           {/* Social Links */}
           <motion.div
-            initial='hidden'
+            initial="hidden"
             animate={isInView ? "visible" : "hidden"}
             variants={{
               visible: {
@@ -161,48 +167,65 @@ const Contact = () => {
               },
             }}
             style={{ marginTop: "20px", display: "flex", gap: "10px" }}
-            className='flex space-x-6'>
+            className="flex space-x-6"
+          >
             {items.map((item, index) => (
               <motion.a
                 key={index}
                 href={item.url}
-                target='_blank'
-                rel='noopener noreferrer'
-                variants={iconVariants}>
+                target="_blank"
+                rel="noopener noreferrer"
+                variants={iconVariants}
+              >
                 <div
                   style={{
                     transform: zoomedIndexes[index] ? "scale(1.3)" : "scale(1)",
                   }}
                   onMouseEnter={() => handleMouseEnter(index)}
                   onMouseLeave={() => handleMouseLeave(index)}
-                  className='transition transform duration-300 text-black text-3xl hover:text-black'>
+                  className="transition transform duration-300 text-black text-3xl hover:text-black"
+                >
                   {item.icon}
                 </div>
               </motion.a>
             ))}
           </motion.div>
+
+          {/* Logo Gambar */}
           <motion.div
-            className='absolute lg:block hidden bottom-[13rem] left-[56rem]'
-            initial='hidden'
+            className="absolute lg:block hidden bottom-[13rem] left-[56rem]"
+            initial="hidden"
             animate={isInView ? "visible" : "hidden"}
-            variants={containerVariants}>
+            variants={containerVariants}
+          >
             <motion.div variants={childVariants}>
               <img
-                width='220px'
-                height='200px'
-                className='rounded-md grayscale contacimg hover:grayscale-0 transition-all duration-500 lg:-mt-8 mt-28 shadow-xl'
+                width="220px"
+                height="200px"
+                className="rounded-md grayscale contacimg hover:grayscale-0 transition-all duration-500 lg:-mt-8 mt-24 shadow-xl"
                 src={Logo}
-                alt=''
+                alt=""
                 style={{
                   transition: "transform 0.3s",
-                  
                 }}
               />
             </motion.div>
+          </motion.div>
 
-            <motion.div variants={lineVariants}></motion.div>
-
-            <motion.div variants={lineVariants}></motion.div>
+          {/* Responsive Mobile Logo */}
+          <motion.div
+            className="block lg:hidden mt-6"
+            initial="hidden"
+            animate={isInView ? "visible" : "hidden"}
+            variants={containerVariants}
+          >
+            <motion.div variants={childVariants}>
+              <img
+                className="rounded-md grayscale contacimg hover:grayscale-0 transition-all duration-500 w-36 mx-auto shadow-xl"
+                src={Logo}
+                alt="Logo"
+              />
+            </motion.div>
           </motion.div>
         </div>
       </div>
