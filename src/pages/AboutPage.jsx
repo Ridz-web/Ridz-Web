@@ -4,6 +4,7 @@ import Project from "../components/About/Project";
 import Skill from "../components/About/Skill";
 import SkillMobile from "../components/About/SkillMobile";
 import CoffeLoader from "../components/Global/AboutLoader";
+import Contact from "../components/Footer/Contact";
 import { motion, useInView } from "framer-motion";
 
 function useScreenType() {
@@ -23,18 +24,20 @@ const AboutPage = () => {
   return (
     <>
       <CoffeLoader />
-      <div className='bg-[#c4a580] min-h-[100dvh]'>
+      <div className="bg-[#c4a580] min-h-[100dvh]">
         <motion.div
           initial={{ y: 5000 }}
           animate={{
             y: isInView ? 0 : 50,
             transition: { duration: 0.5 },
           }}
-          ref={ref}>
+          ref={ref}
+        >
           <About />
         </motion.div>
         {isDesktop ? <Skill /> : <SkillMobile />}
         <Project />
+        <Contact />
       </div>
     </>
   );
