@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Animated Header -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=3,12,20&height=180&section=header&text=Sabil%20Murti&fontSize=42&fontColor=fff&animation=fadeIn&fontAlignY=32&desc=Full%20Stack%20Engineer%20•%20AI%20Explorer&descAlignY=52&descAlign=50" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=3,12,20&height=180&section=header&text=Ridho%20Budi&fontSize=42&fontColor=fff&animation=fadeIn&fontAlignY=32&desc=Full%20Stack%20Engineer%20•%20AI%20Explorer&descAlignY=52&descAlign=50" width="100%"/>
 
 <!-- Typing Intro -->
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=7AA2F7&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=100&lines=Turning+ideas+into+clean+code+%F0%9F%92%BB;Obsessed+with+system+design+%F0%9F%A4%A0;Exploring+AI+integration+%E2%9C%A8)](https://git.io/typing-svg)
