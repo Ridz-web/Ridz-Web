@@ -30,5 +30,5 @@ const ridho = {
   location: "Indonesia 🇮🇩",
   role: "FrontEnd Developer",
   focus: ["design", "AI-powered tools", "Reusable templates"],
-  motivation: "we walk the talk not only talk the talk",
+  motivation: "jangan takut hitam",
 };
